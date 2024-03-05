@@ -1,7 +1,8 @@
 def fungsi(nilai_x):
     return nilai_x ** 3 + nilai_x ** 2 - 3 * nilai_x ** 1 - 3
 
-epsilon = 0.0001
+print("Contoh: " "0.0001")
+epsilon = float(input("Masukan nilai epsilon: "))
 
 xn = float(input("Masukkan nilai xn: "))
 xn_tambah_1 = float(input("Masukkan nilai xn + 1: "))
@@ -18,7 +19,7 @@ while xt:
     xt = (xn + xn_tambah_1) / 2
     fxt = fungsi(xt)
     
-    print("Iterasi ke-:", iterasi)
+    print("Iterasi ke:", iterasi)
     print("Nilai xn:", xn)
     print("Nilai xn+1:", xn_tambah_1)
     print("Nilai xt:", xt)
